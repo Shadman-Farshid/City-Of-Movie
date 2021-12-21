@@ -1,0 +1,9 @@
+﻿@using CityOfMovie.Core.DTOs
+@using CityOfMovie.Core.Services.Interfaces
+@inject IUserService _UserServise 
+@{
+    UserPanelSidebarAvatarVm av = _UserServise.GetAvatar(User.Identity.Name);
+}
+<div class="avatar-image text-center mt-2">
+    <img src="~/Avatars/@av.Avatar" alt="" id="avatarImage">
+</div>

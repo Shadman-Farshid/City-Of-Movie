@@ -1,0 +1,28 @@
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.deps.json
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.runtimeconfig.json
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\bin\Debug\net6.0\ref\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.pdb
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.AssemblyInfoInputs.cache
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.AssemblyInfo.cs
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.csproj.CoreCompileInputs.cache
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\ref\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.pdb
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.genruntimeconfig.cache
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.csproj.AssemblyReference.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.deps.json
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.runtimeconfig.json
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\bin\Debug\net6.0\ref\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\bin\Debug\net6.0\CityOfMovie.Data.pdb
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.AssemblyInfoInputs.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.AssemblyInfo.cs
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.csproj.CoreCompileInputs.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\ref\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.pdb
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.genruntimeconfig.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.csproj.AssemblyReference.cache

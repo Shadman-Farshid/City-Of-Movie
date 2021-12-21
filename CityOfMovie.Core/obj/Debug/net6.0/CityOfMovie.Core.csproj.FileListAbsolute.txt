@@ -1,0 +1,34 @@
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.deps.json
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.runtimeconfig.json
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\ref\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.pdb
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Data.pdb
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.csproj.AssemblyReference.cache
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.AssemblyInfoInputs.cache
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.AssemblyInfo.cs
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.csproj.CoreCompileInputs.cache
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.csproj.CopyComplete
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\ref\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.pdb
+E:\Programming\Project\C# Projects\New folder\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.genruntimeconfig.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.deps.json
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.runtimeconfig.json
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\ref\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Core.pdb
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Data.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\bin\Debug\net6.0\CityOfMovie.Data.pdb
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.csproj.AssemblyReference.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.AssemblyInfoInputs.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.AssemblyInfo.cs
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.csproj.CoreCompileInputs.cache
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.csproj.CopyComplete
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\ref\CityOfMovie.Core.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.pdb
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Core\obj\Debug\net6.0\CityOfMovie.Core.genruntimeconfig.cache

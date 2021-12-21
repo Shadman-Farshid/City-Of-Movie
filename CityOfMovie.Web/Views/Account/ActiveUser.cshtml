@@ -1,0 +1,14 @@
+﻿@model CityOfMovie.Core.DTOs.LoginVm
+@{
+    ViewData["Title"] = "شهر فیلم :: فعالسازی";
+}
+
+@if (ViewBag.isActive)
+{
+<p class="text-info"> حساب شما با موفقیت فعال شد</p>
+}
+else
+{
+    <p class="text-danger">کاربری با مشخصات وارد شده یافت نشد</p>
+}
+

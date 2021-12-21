@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body dir="rtl">
+    <canvas style="position:absolute !important;"></canvas>
+    <partial name="_Header" style="z-index:999 !important;" />
+    <div onclick="CloseSearchBox()" id="main-body">
+        <main role="main" class="pb-3">
+            <div class="container">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+
+
+
+    @*<footer class="border-top footer text-muted">
+
+        </footer>*@
+
+    <partial name="_Scripts" />
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

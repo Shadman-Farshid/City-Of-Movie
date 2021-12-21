@@ -1,0 +1,23 @@
+﻿body {
+    font-family: Vazir !important;
+    background: #24282f;
+}
+.register-label,.Login-label
+{
+    color: azure
+}
+.register-input-div, .forgotPassword-input-div {
+    margin-top: 10px;
+}
+.register-inputs, .login-inputs {
+    width: 300px !important;
+    background-color: burlywood !important;
+}
+span {
+    color: red;
+}
+.Validation-errors {
+    color: red;
+    font-size: 20px;
+    line-height: 40px;
+}

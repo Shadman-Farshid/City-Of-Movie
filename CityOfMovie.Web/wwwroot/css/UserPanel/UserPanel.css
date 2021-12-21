@@ -1,0 +1,137 @@
+﻿@font-face {
+    font-family: 'Vazir';
+    src: url('/fonts/Vazir/Vazir-FD-WOL.woff2') format('woff2'), url('/fonts/Vazir/Vazir-FD-WOL.woff') format('woff'), url('/fonts/Vazir/Vazir-FD-WOL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Vazir !important;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+#mybtn {
+    height: 25px;
+    margin-top: 100px;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0.5px 0.5px 30px 5px hsla(60, 33%, 99%, 0.671);
+}
+
+#sidebar {
+    background-color: #24282f;
+    height: 100vh; 
+    padding: 0px;
+}
+
+#avatarImage {
+    height: 200px;
+    width: 180px;
+    margin: auto;
+    margin: auto;
+    
+}
+.avatar-image {
+    box-shadow: 0.5px 0.5px 10px 5px hsla(60, 100%, 99%, 0.671);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    width: 215px !important;
+    margin-right: 47px !important;
+}
+
+#avatar-section {
+    padding: 20px;
+    align-content: center;
+    margin-right: 5px;
+}
+
+.menu {
+    margin-right:5px;
+    align-items: baseline !important;
+    height: 50px;
+    padding: 10px;
+}
+
+    .menu:hover {
+        background: rgb(7, 7, 7);
+        cursor: pointer;
+    }
+
+.menu-item {
+    color: rgb(196, 183, 183);
+    position: relative;
+}
+
+.menu:hover .menu-item {
+    color: white;
+}
+
+.menu-icon {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.menu-name {
+    text-decoration: none;
+}
+
+.selected {
+    background-color: goldenrod;
+}
+/* body ================================================================== */
+#user-information {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-information-body {
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+}
+
+.information {
+    align-items: baseline;
+   
+}
+
+    .information h6 {
+        margin-left: 20px;
+    }
+/*Edit Panel =====================================================*/
+.editUserInformation {
+    width: 250px;
+    border: 1px solid lightBlue !important;
+    border-radius: 5px;
+    height: 35px;
+    padding: 10px;
+}
+
+    .editUserInformation:focus {
+        outline: 3px solid lightBlue !important;
+    }
+.edit-information {
+    margin-top: 20px;
+}
+.img-preview{
+    margin-top:35px;
+    margin-right: 125px;
+   max-width:150px;
+   display:inline-block;
+}
+.edit-user-information-button {
+   
+    margin-left: 15px;
+    
+}
+/*Edit userPanel validation errors =====================*/
+.field-validation-error {
+    color: red;
+    margin-right:100px;
+}

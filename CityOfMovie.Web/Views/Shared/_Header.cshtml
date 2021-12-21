@@ -1,0 +1,24 @@
+﻿
+<header>
+    <div class="row">
+        <div class="col-6">
+            <ul id="navbar">
+                <li class="navbarItems"><a asp-controller="Home" asp-action="Home" class="navbarLinks">خانه</a></li>
+                <li class="navbarItems">پنل مدیریت</li>
+                <li class="navbarItems"></li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <div class="Search-box d-flex">
+                <form method="post" asp-action="Login">
+                    <div class="dropdown" id="nav-user-icon">
+                        @await Component.InvokeAsync("DropDowMenu")
+                    </div>
+                </form>
+                <img src="/Icons/search.png" class="text-white" onclick="OpenSearchBox()" id="nav-searchBox-Icon" />
+                <input type="hidden" name="search" id="Nav-searchBox" placeholder="جست و جو" class=" form-control Nav-searchBox">
+                <div class="nav-user-menu d-none" id="nav-user-menu"></div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,76 @@
+﻿@using CityOfMovie.Core.DTOs
+@using CityOfMovie.Core.Convertors
+@model WalletDepositVM
+@{
+    ViewData["Title"] = "شهر فیلم :: شارژ کیف پول";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+@{
+    List<walletBalanceHistoryVM> wallet = ViewBag.balanceHistory as List<walletBalanceHistoryVM>;
+    int counter = 1;
+}
+
+
+<div id="user-information-body">
+
+    <h4>شارژ کیف پول</h4>
+    <hr>
+    <form method="post" asp-action="Wallet">
+        <div class="information-section ">
+            <div class="edit-information information" style="display:inline-block">
+                <h6 style="display:inline-block">مبلغ شارژ :</h6>
+                <input asp-for="Amount" class="editUserInformation" type="number" />
+                <span asp-validation-for="Amount"></span>
+            </div>
+            <div class="edit-user-information-button" style="display:inline-block;margin-right:20px">
+                <button class="btn btn-danger" type="submit" asp-controller="Wallet">شارژ</button>
+            </div>
+        </div>
+    </form>
+    <section class="payment-history-section mt-3">
+        <h6 class="text-center alert alert-danger">تاریخچه تراکنش ها</h6>
+       
+            @if (wallet.Count !=0)
+            {
+                 <div style="height:204px;overflow-y:scroll">
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">مبلغ</th>
+                            <th scope="col">تاریخ تراکنش</th>
+                            <th scope="col">نوع تراکنش</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in wallet)
+                        {
+                            <tr>
+                                <th scope="row">@counter</th>
+                                <td>@item.Amount.ToString("#,00 تومان")</td>
+                                <td>@item.CreateDate.ToShamsi()</td>
+                                @if (item.TypeId == 1)
+                                {
+                                    <td class="text-success">@item.Description</td>
+                                }
+                                else
+                                {
+                                    <td class="text-danger">@item.Description</td>
+                                }
+
+                            </tr>
+                            counter++;
+                        }
+                    </tbody>
+                </table>
+                 </div>
+            }
+            else
+            {
+                <h6 class="text-center alert alert-warning">تراکنشی وجود ندارد  </h6>
+            }
+
+       
+
+    </section>
+</div>

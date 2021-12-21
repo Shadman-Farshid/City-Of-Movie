@@ -1,0 +1,51 @@
+﻿@using TopLearn.DataLayer.Entities.Wallet
+@model CityOfMovie.Core.DTOs.LoginVm
+ @if (User.Identity.IsAuthenticated)
+{
+    
+       @* Wallet walet = ViewBag.UserBalance as Wallet;*@
+    
+    <i class="fa-solid fa-user text-warning float-end" onclick="CollapseUserMenu()" id="Nav-User-Menu-Icon"></i>
+    <div class="menu" id="Nav-User-Menu">
+        <div class="nav-dropDownMenu nav-dropDownMenu-username">
+            <i class="fa-solid fa-user"></i>
+            <p>@User.Identity.Name</p>
+        </div>        
+        <div class="nav-dropDownMenu nav-dropDownMenu-WalletBalance">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p>@ViewBag.UserBalance</p>
+        </div>
+        <div class="nav-login-register-btn">
+            <a class="btn" href="/Wallet">شارژ کیف پول</a>
+        </div>
+        <div class="nav-login-register-btn">
+            <button asp-controller="UserPanel" asp-action="Index">پنل کاربری</button>
+        </div>
+        <div class="nav-login-register-btn">
+            <button asp-controller="Account" asp-action="Logout" type="submit">خروج از حساب</button>
+        </div>
+    </div>
+}
+else
+{
+    <i class="fa-solid fa-user text-warning float-end" onclick="CollapseUserMenu()" id="Nav-User-Menu-Icon"></i>
+    <div class="menu" id="Nav-User-Menu">
+        <div class="nav-login-username">
+            <input asp-for="UserName" type="text" class="nav-login-input" placeholder="نام کاربری">
+        </div>
+        <div class="nav-login-password">
+            <input asp-for="Password" type="password" class="nav-login-input" placeholder="کلمه عبور">
+        </div>
+        <div class="nav-login-rememberMe">
+            <input asp-for="RememberMe" type="checkbox">
+            <label for="">مرا به خاطر بسپار</label>
+        </div>
+        <div class="nav-login-register">
+            <a asp-controller="Account" asp-action="Register">ثبت نام</a>
+        </div>
+        <div class="nav-login-register-btn">
+            <button asp-controller="Account" asp-action="Login" type="submit">ورود</button>
+        </div>
+    </div>
+
+}

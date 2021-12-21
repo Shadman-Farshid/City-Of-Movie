@@ -1,0 +1,30 @@
+﻿    @using CityOfMovie.Core.Convertors
+@using CityOfMovie.Core.DTOs
+@model UserPanelVm
+@{
+    ViewData["Title"] = "شهر فیلم :: پنل کاربری";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+ 
+ <div id="user-information-body">
+        <h4>اطلاعات کاربری</h4>
+        <hr>
+        <div class="information-section ">
+            <div class="information d-flex">
+                <h6>نام کاربری :</h6>
+                <p>@Model.UserName</p>
+            </div>
+            <div class="information d-flex">
+                <h6>ایمیل :</h6>
+                <p>@Model.Email</p>
+            </div>
+            <div class="information d-flex">
+                <h6>تاریخ عضویت :</h6>
+                <p>@Model.RegisterDate.ToShamsi()</p>
+            </div>
+            <div class="information d-flex">
+                <h6>موجودی کیف پول :</h6>
+                <p>@Model.Wallet.ToToman()</p>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "OnlinePayment";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+<div id="user-information-body">
+    <div class="information-section ">
+        @if(ViewBag.IsSuccess == true){
+        <div class="alert alert-info">
+            <p>پرداخت با موفقیت انجام شد</p>
+            <p>کد پیگیری : @ViewBag.code</p>
+        </div>
+
+        }else{
+        <p class="alert alert-danger">متاسفانه پرداخت با مشکل مواجه شد ، لطفا دوباره تلاش کنید !</p>
+        }
+    </div>
+</div>
+ 

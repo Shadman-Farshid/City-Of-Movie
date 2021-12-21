@@ -1,0 +1,55 @@
+﻿@using CityOfMovie.Core.DTOs
+@model EditUserPanelVm
+@{
+    ViewData["Title"] = "شهر فیلم :: ویرایش حساب کاربری";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+
+<div id="user-information-body">
+
+    <h4>اطلاعات کاربری</h4>
+    <hr>
+    <form method="post" asp-action="UpdateUserInformations" enctype="multipart/form-data">
+        <input type="hidden" asp-for="AvatarName" />
+        <input type="hidden" asp-for="UserId" />
+        <div class="information-section ">
+            <div class="edit-information information d-flex">
+                <h6>نام کاربری :</h6>
+                <input asp-for="UserName" class="editUserInformation" type="text" />
+            </div>
+            <div class="edit-information information d-flex ">
+                <h6>ایمیل :</h6>
+                <input asp-for="Email" class="editUserInformation " style="margin-right:28px" type="text" />
+            </div>
+            <div class="edit-information information d-flex ">
+                <h6>آواتار :</h6>
+                <input id="avat" type="file" asp-for="Avatar" class="form-checked" style="margin-right:28px" />
+            </div>
+            <div class="img-preview">
+                <img id="img-preview" style="max-width:150px; max-height:200px" src="~/Avatars/@Model.AvatarName" />
+            </div>
+            <div dir="ltr" class="edit-user-information-button"  >
+                <button class="btn btn-danger" type="submit" asp-controller="UserPanel" asp-action="UpdateUserInformations">اعمال تغییرات</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts{
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $("#img-preview").attr("src", e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#avat").change(function() {
+        readURL(this);
+    });
+</script>
+}

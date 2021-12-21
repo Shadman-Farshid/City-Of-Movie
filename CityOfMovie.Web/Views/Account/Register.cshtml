@@ -1,0 +1,42 @@
+﻿@model CityOfMovie.Core.DTOs.RegisterVM
+@{
+    ViewData["Title"] = "شهر فیلم :: ثبت نام";
+}
+<link href="~/css/RegisterAndLogin.css" rel="stylesheet" />
+
+<h1 class="text-warning mt-4">فرم ثبت نام</h1>
+<hr style="color: darkgray" />
+<section class="form-register">
+    <form method="post" asp-action="Register" autocomplete="off">
+        <div class="row">
+            <div class="Inputs-div col-6">
+                <div class="register-input-div Register-email">
+                    <label asp-for="Email" class="form-label register-label"></label>
+                    <input asp-for="Email" type="email" class="register-inputs form-control"/>
+                </div>
+                <div class="register-input-div Register-userName">
+                    <label asp-for="UserName" class="form-label register-label"></label>
+                    <input asp-for="UserName" type="text" class="register-inputs form-control"/>
+                </div>
+                <div class="register-input-div Register-password">
+                    <label asp-for="Password" class="form-label register-label"></label>
+                    <input asp-for="Password" type="password" class="register-inputs form-control"/>
+                </div>
+                <div class="register-input-div Register-repassword">
+                    <label asp-for="Repassword" class="form-label register-label"></label>
+                    <input asp-for="Repassword" type="password" class="register-inputs form-control"/>
+                </div>
+
+                <div class="register-btn mt-4">
+                    <button asp-action="Register" type="submit" class="btn btn-danger">ثبت نام</button>
+                    <a asp-controller="Home" asp-action="Home" class="btn btn-warning">بازگشت</a>
+                </div>
+            </div>
+            <div class="validation-div col-6 mt-4">
+                <div asp-validation-summary="All" class="Validation-errors"></div>
+            </div>
+        </div>
+    </form>
+</section>
+
+

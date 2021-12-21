@@ -1,0 +1,48 @@
+﻿@model CityOfMovie.Core.DTOs.LoginVm
+@{
+    ViewData["Title"] = "شهر فیلم :: صفحه ورود";
+}
+<link href="~/css/RegisterAndLogin.css" rel="stylesheet" />
+<h1 class="text-warning mt-4">ورود به حساب کاربری</h1>
+<hr style="color: darkgray" />
+<section class="form-Login">
+   @if (ViewBag.isSucced != null)
+   {
+       
+           <p class="text-warning">
+               ورود شما با موفقیت انجام شد
+           </p>
+           <script>
+               var delay = 3000;
+               setTimeout(function(){ window.location = "/Home/Home"; }, delay);
+           </script>
+       
+   }
+    <form method="post" asp-action="Login" autocomplete="off">
+        <div class="row">
+            <div class="Inputs-div col-6 mt-4">
+                <div class="Login-input-div Login-userName">
+                    <label asp-for="UserName" class="form-label Login-label"></label>
+                    <input asp-for="UserName" type="text" class="login-inputs form-control"/>
+                </div>
+                <div class="Login-input-div Login-password  mt-4">
+                    <label asp-for="Password" class="form-label Login-label"></label>
+                    <input asp-for="Password" type="password" class="login-inputs form-control"/>
+                </div>
+                <div class="Login-input-div Login-rememberMe  mt-4">
+                    <input asp-for="RememberMe" type="checkbox" class="form-check-input"/>
+                    <label asp-for="RememberMe" class="form-check-label Login-label"></label>
+
+                </div>
+                <div class="Login-btn mt-4">
+                    <button asp-action="Login" type="submit" class="btn btn-danger">ورود</button>
+                    <a asp-controller="Home" asp-action="Home" class="btn btn-warning">بازگشت</a>
+                </div>
+            </div>
+            <div class="validation-div col-6 mt-4">
+                <div asp-validation-summary="All" class="Validation-errors"></div>
+            </div>
+        </div>
+    </form>
+</section>
+
