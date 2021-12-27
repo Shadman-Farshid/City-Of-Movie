@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityOfMovie.Web", "CityOfMovie.Web.csproj", "{E76B1B81-2805-444E-B96C-D946F7F235CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityOfMovie.Web", "CityOfMovie.Web.csproj", "{E76B1B81-2805-444E-B96C-D946F7F235CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityOfMovie.Core", "..\CityOfMovie.Core\CityOfMovie.Core.csproj", "{58B1DE6E-003F-436D-A390-A4E3D9B0F9FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityOfMovie.Core", "..\CityOfMovie.Core\CityOfMovie.Core.csproj", "{58B1DE6E-003F-436D-A390-A4E3D9B0F9FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityOfMovie.Data", "..\CityOfMovie.Data\CityOfMovie.Data.csproj", "{C2CA6C6B-7F39-43F7-BFA7-0076DB6A812B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityOfMovie.Data", "..\CityOfMovie.Data\CityOfMovie.Data.csproj", "{C2CA6C6B-7F39-43F7-BFA7-0076DB6A812B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

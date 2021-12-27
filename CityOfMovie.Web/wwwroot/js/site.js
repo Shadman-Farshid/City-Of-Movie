@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     var menuDiv = document.querySelector("#Nav-User-Menu"),
         btnelem = document.querySelector("#Nav-User-Menu-Icon"),
-        test = menuDiv.getBoundingClientRect(),
+       /* test = menuDiv.getBoundingClientRect(),*/
         btn = btnelem.getBoundingClientRect(),
         offset,
         top,
@@ -272,4 +272,4 @@ $(document).ready(function () {
 
 
 });
-/*End Covas Background ========================================================================*/
+/*End Covas Background ======================================================================*/

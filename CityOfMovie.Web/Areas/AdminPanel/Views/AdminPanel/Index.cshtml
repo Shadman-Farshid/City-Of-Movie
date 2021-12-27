@@ -1,0 +1,75 @@
+﻿@using CityOfMovie.Core.Convertors
+@using CityOfMovie.Core.DTOs
+@model UserListViewModel;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_AdminPanelLayout.cshtml";
+    var counter = 1;
+}
+<section class="AdminPanel-UserList">
+    <div class="adminPanel-body">
+        <h2>لیست کاربران</h2>
+        <div class="filter-inputs">
+          @await Component.InvokeAsync("UserFilters")
+        </div>
+        <div class="userList">
+            @if (Model.userList.Count > 0)
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">نام کاربری</th>
+                            <th scope="col">ایمیل</th>
+                            <th scope="col">تاریخ عضویت</th>
+                            <th scope="col">وضعیت حساب</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model.userList)
+                        {
+                            <tr>
+                                <th scope="row">@counter</th>
+                                <td valign="middle">@user.UserName</td>
+                                <td valign="middle">@user.Email</td>
+                                <td valign="middle">@user.RegisterDate.ToShamsi()</td>
+                                <td valign="middle">
+                                    @if (user.IsActive)
+                                    {
+                                        <p class="text-success">فعال</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-danger">غیر فعال</p>
+                                    }
+                                </td>
+                                <td valign="middle">
+                                    <div class="table-buttons">
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button><i class="fa-solid fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            counter++;
+                        }
+                    </tbody>
+                </table>
+
+            }
+            else
+            {
+                <p class="alert alert-info">کاربری موجود نیست</p>
+            }
+
+        </div>
+        <div class="page-number">
+            <ul>
+                <li><a class="active">1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+

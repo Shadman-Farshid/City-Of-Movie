@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="/css/AdminPanel/AdminPanelStyle.css" />
+</head>
+<body>
+    
+    <div class="d-flex">
+        <div id="sidebar">
+            <div id="menu-section">
+                <div onclick="selectedMenu(event)" class="mt-5 menu-section">
+                    <div class="menu">
+                        <i class="menu-item menu-icon fa-regular fa-user"></i>
+                        <a class="menu-item menu-name" href="/UserPanel">مدیریت کاربران</a>
+                    </div>
+                    <div class="menu">
+                        <i class="menu-item menu-icon fa-regular fa-edit"></i>
+                        <a class="menu-item menu-name" href="UserPanel/Edit">ویرایش اطلاعات کاربری</a>
+                    </div>
+                    <div class="menu">
+                        <i class="menu-item menu-icon fa-solid fa-wallet"></i>
+                        <a class="menu-item menu-name" href="/Wallet" >شارژ کیف پول</a>
+                    </div>
+                     <div class="menu">
+                        <i class="menu-item menu-icon fa-solid fa-key"></i>
+                        <a class="menu-item menu-name" asp-action="EditPassword" asp-controller="UserPanel" >تغییر کلمه عبور</a>
+                    </div>
+                     <div class="menu">
+                        <i class="menu-item menu-icon fa-solid fa-right-from-bracket"></i>
+                        <a class="menu-item menu-name" asp-controller="Account" asp-action="Logout">خروج</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  id="user-information" >
+            @RenderBody()
+        </div> 
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

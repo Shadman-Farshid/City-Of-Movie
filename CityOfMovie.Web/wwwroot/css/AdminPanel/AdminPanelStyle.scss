@@ -1,0 +1,164 @@
+﻿@font-face {
+    font-family: 'Vazir';
+    src: url('/fonts/Vazir/Vazir-FD-WOL.woff2') format('woff2'), url('/fonts/Vazir/Vazir-FD-WOL.woff') format('woff'), url('/fonts/Vazir/Vazir-FD-WOL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    direction: rtl;
+    font-family: Vazir !important;
+
+    #sidebar {
+        background-color: #24282f;
+        width: 280px;
+        padding: 0;
+        height: 100vh;
+        ;
+    }
+
+    .menu {
+        align-items: baseline !important;
+        height: 50px;
+        padding: 10px;
+        width: stretch;
+
+        a {
+            text-decoration: none;
+            color: rgb(196, 183, 183);
+            position: relative;
+        }
+
+        i {
+            margin-right: 5px;
+            margin-left: 15px;
+            color: rgb(196, 183, 183);
+        }
+    }
+
+    .menu:hover {
+        cursor: pointer;
+        background: rgb(7, 7, 7);
+
+        a, i {
+            color: white;
+        }
+    }
+
+    #user-information {
+        background-color: lightblue;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+.AdminPanel-UserList {
+    .adminPanel-body {
+        padding: 20px 40px;
+
+        h2 {
+            font-weight: bold;
+        }
+    }
+}
+/*Admin UserList=======================================*/
+.filter-inputs {
+    margin-top: 30px;
+
+    input {
+        outline: none;
+        border: none;
+        box-shadow: inset 2px 2px 5px lightblue,inset -2px -2px 3px lightblue;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        padding: 5px;
+        background-color: transparent;
+        box-shadow: 2px 2px 5px rgb(103, 151, 165),2px 2px 5px rgb(103, 151, 165);
+
+        &:focus {
+            color: chocolate;
+            box-shadow: inset 1px 1px 2px rgb(103, 151, 165), 1px 1px 3px rgb(103, 151, 165);
+        }
+    }
+
+    button, a {
+        background: none;
+        border: none;
+        color: darkblue;
+        font-size: 20px;
+        display:inline-block;
+
+        &:hover {
+            color: chocolate;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.userList {
+    margin-top: 10px;
+}
+
+.table-buttons {
+    button:first-child {
+        color: green;
+    }
+
+    button:last-child {
+        color: red;
+    }
+
+    button {
+        background: none;
+        border: none;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+td, th {
+    text-align: center;
+}
+
+td {
+    line-height: 5px;
+
+    p {
+        display: inline-block;
+        font-size: 13px;
+        margin: auto;
+    }
+}
+
+table {
+    box-shadow: 2px 2px 5px rgb(143, 175, 185), -2px -2px 5px rgb(143, 175, 185);
+    border-radius: 10px;
+}
+
+.page-number {
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            text-align: center;
+            padding: 1px;
+        }
+
+        a {
+            border-radius: 5px;
+            display: inline-block;
+            width: 20px !important;
+            box-shadow: 2px 2px 5px rgb(103, 151, 165),2px 2px 5px rgb(103, 151, 165);
+
+            &.active {
+                box-shadow: inset 1px 1px 2px rgb(103, 151, 165), 1px 1px 3px rgb(103, 151, 165);
+                text-decoration: none;
+            }
+        }
+    }
+}

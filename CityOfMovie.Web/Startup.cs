@@ -46,6 +46,7 @@ namespace CityOfMovie.Web
 
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IViewRenderService, RenderViewToString>();
+            services.AddTransient<IAdminServices, AdminServices>();
 
             #endregion
 
@@ -85,8 +86,9 @@ namespace CityOfMovie.Web
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
             });
         }
     }
