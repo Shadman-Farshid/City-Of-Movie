@@ -12,11 +12,17 @@ namespace CityOfMovie.Core.DTOs
         public List<User> userList { get; set; }
         public int PageCount { get; set; }
         public int CurentPage { get; set; }
+
     }
     public class UserFilterViewModel
     {
         public int PageId { get; set; }
         public string username { get; set; }
         public string email { get; set; }
+        public List<User> userList { get; set; }
+        public int PageCount { get; set; }
+        public int CurentPage { get; set; }
+        public int UserPerPage { get; set; }
+
     }
 }

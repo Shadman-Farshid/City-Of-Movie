@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/AdminPanel/AdminPanelStyle.css" />
 </head>
 <body>
-    
+
     <div class="d-flex">
         <div id="sidebar">
             <div id="menu-section">
@@ -26,23 +26,25 @@
                     </div>
                     <div class="menu">
                         <i class="menu-item menu-icon fa-solid fa-wallet"></i>
-                        <a class="menu-item menu-name" href="/Wallet" >شارژ کیف پول</a>
+                        <a class="menu-item menu-name" href="/Wallet">شارژ کیف پول</a>
                     </div>
-                     <div class="menu">
+                    <div class="menu">
                         <i class="menu-item menu-icon fa-solid fa-key"></i>
-                        <a class="menu-item menu-name" asp-action="EditPassword" asp-controller="UserPanel" >تغییر کلمه عبور</a>
+                        <a class="menu-item menu-name" asp-action="EditPassword" asp-controller="UserPanel">تغییر کلمه عبور</a>
                     </div>
-                     <div class="menu">
+                    <div class="menu">
                         <i class="menu-item menu-icon fa-solid fa-right-from-bracket"></i>
                         <a class="menu-item menu-name" asp-controller="Account" asp-action="Logout">خروج</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div  id="user-information" >
+        <div id="user-information">
             @RenderBody()
-        </div> 
+        </div>
     </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/js/AdminPanel.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

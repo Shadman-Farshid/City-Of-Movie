@@ -81,7 +81,6 @@ E:\Programming\Project\C# Projects\New folder\CityOfMovie.Web\obj\Debug\net6.0\C
 E:\Programming\Project\C# Projects\New folder\CityOfMovie.Web\obj\Debug\net6.0\ref\CityOfMovie.Web.dll
 E:\Programming\Project\C# Projects\New folder\CityOfMovie.Web\obj\Debug\net6.0\CityOfMovie.Web.pdb
 E:\Programming\Project\C# Projects\New folder\CityOfMovie.Web\obj\Debug\net6.0\CityOfMovie.Web.genruntimeconfig.cache
-E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\appsettings.Development.json
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\appsettings.json
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\libman.json
@@ -97,6 +96,7 @@ E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\MessagePack.Annotations.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.Build.Locator.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll

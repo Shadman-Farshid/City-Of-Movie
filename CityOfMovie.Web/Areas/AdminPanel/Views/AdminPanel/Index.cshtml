@@ -1,16 +1,26 @@
 ﻿@using CityOfMovie.Core.Convertors
 @using CityOfMovie.Core.DTOs
-@model UserListViewModel;
+@model UserFilterViewModel;
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/AdminPanel/Views/Shared/_AdminPanelLayout.cshtml";
-    var counter = 1;
+    var counter = (Model.CurentPage * Model.UserPerPage) - Model.UserPerPage + 1;
+   
+   
+
 }
 <section class="AdminPanel-UserList">
     <div class="adminPanel-body">
         <h2>لیست کاربران</h2>
         <div class="filter-inputs">
-          @await Component.InvokeAsync("UserFilters")
+           
+             <form id="filterInputsForm" method="get" asp-action="Index">
+                <input  id="userName" asp-for="username"  placeholder="نام کاربری"  />
+                <input  id="email" asp-for="email"  placeholder="ایمیل" />
+                <button  type="submit" asp-action="Index"><i class="fa-solid fa-filter"></i></button>
+                <a href="Admin"><i class="fa-solid fa-arrows-rotate"></i></a>
+            </form>
+            
         </div>
         <div class="userList">
             @if (Model.userList.Count > 0)
@@ -26,33 +36,33 @@
                             <th scope="col"></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        @foreach (var user in Model.userList)
-                        {
-                            <tr>
-                                <th scope="row">@counter</th>
-                                <td valign="middle">@user.UserName</td>
-                                <td valign="middle">@user.Email</td>
-                                <td valign="middle">@user.RegisterDate.ToShamsi()</td>
-                                <td valign="middle">
-                                    @if (user.IsActive)
-                                    {
-                                        <p class="text-success">فعال</p>
-                                    }
-                                    else
-                                    {
-                                        <p class="text-danger">غیر فعال</p>
-                                    }
-                                </td>
-                                <td valign="middle">
-                                    <div class="table-buttons">
-                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
-                                        <button><i class="fa-solid fa-trash"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            counter++;
-                        }
+                    <tbody id="tbody">
+                    @foreach (var user in Model.userList)
+                    {
+                        <tr>
+                            <th scope="row">@counter</th>
+                            <td valign="middle">@user.UserName</td>
+                            <td valign="middle">@user.Email</td>
+                            <td valign="middle">@user.RegisterDate.ToShamsi()</td>
+                            @if (user.IsActive)
+                            {
+                                <td valign="middle" class="text-success">فعال</td>
+                            }
+                            else
+                            {
+                                <td valign="middle" class="text-danger">غیرفعال</td>
+                            }
+                            <td>
+                                <div class="table-buttons">
+                                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button><i class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                       
+                        counter++;
+                    }
+                   
                     </tbody>
                 </table>
 
@@ -65,9 +75,16 @@
         </div>
         <div class="page-number">
             <ul>
-                <li><a class="active">1</a></li>
-                <li><a>2</a></li>
-                <li><a>3</a></li>
+                @for (var i = 1; i < Model.PageCount+1; i++)
+                {
+                    var isActive = "";
+                    if (i== Model.CurentPage)
+                    {
+                         isActive = "active";
+                    }
+                   
+                    <li><a class="@isActive"  href="/Admin/@i" style="cursor: pointer">@i</a></li>
+                }
             </ul>
         </div>
     </div>

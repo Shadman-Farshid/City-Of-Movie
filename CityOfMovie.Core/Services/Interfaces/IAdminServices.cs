@@ -11,6 +11,7 @@ namespace CityOfMovie.Core.Services.Interfaces
 {
     public interface IAdminServices
     {
-        public UserListViewModel GetUsers(int pageId, string username, string email);
+        public UserFilterViewModel GetUsers(int pageId, string username, string email);
+        public List<User> GetAllUserJson();
     }
 }

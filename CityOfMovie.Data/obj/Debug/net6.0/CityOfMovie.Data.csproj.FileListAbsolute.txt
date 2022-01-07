@@ -25,4 +25,3 @@ E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\ref\CityOfMovie.Data.dll
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.pdb
 E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.genruntimeconfig.cache
-E:\Programming\Project\C# Projects\CityOfMovie\CityOfMovie.Data\obj\Debug\net6.0\CityOfMovie.Data.csproj.AssemblyReference.cache

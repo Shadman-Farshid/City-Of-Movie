@@ -1,4 +1,4 @@
-﻿@using CityOfMovie.Core.DTOs
+﻿@*@using CityOfMovie.Core.DTOs
 @model UserFilterViewModel
 @{
     Layout = null;
@@ -12,11 +12,11 @@
     <title>UserFilters</title>
 </head>
 <body>
-    <form onsubmit="SetValueForEmptyInputs(event)" method="post">
-        <input asp-for="username" placeholder="نام کاربری"  />
-        <input asp-for="email" placeholder="ایمیل" />
-        <button  type="submit"><i class="fa-solid fa-filter"></i></button>
+    <form id="filterInputsForm" method="post" asp-action="jsonList">
+        <input onkeyup="filterUserlist()" id="userName" asp-for="username" placeholder="نام کاربری"  />
+        <input onkeyup="filterUserlist()" id="email" asp-for="email" placeholder="ایمیل" />
+        <button  type="submit" asp-action="jsonList"><i class="fa-solid fa-filter"></i></button>
         <a href="Admin"><i class="fa-solid fa-arrows-rotate"></i></a>
     </form>
 </body>
-</html>
+</html>*@

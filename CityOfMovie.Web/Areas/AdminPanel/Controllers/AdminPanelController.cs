@@ -14,12 +14,13 @@ namespace CityOfMovie.Web.Areas.AdminPanel.Controllers
         }
 
         
-        [Route("Admin")]
-        public IActionResult Index(UserFilterViewModel userFilter)
+        [Route("Admin/{id?}")]
+        public IActionResult Index(int id ,UserFilterViewModel userFilter)
         {
-            return View(_adminServices.GetUsers(1, userFilter.username, userFilter.email));
+            
+            return View(_adminServices.GetUsers(id, userFilter.username, userFilter.email));
         }
+        
        
-
     }
 }

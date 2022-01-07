@@ -7,12 +7,12 @@
       "destination": "wwwroot/lib/bootstrap/"
     },
     {
-      "library": "jquery@3.6.0",
-      "destination": "wwwroot/lib/jquery/"
-    },
-    {
       "library": "validate-js@2.0.1",
       "destination": "wwwroot/lib/validate-js/"
+    },
+    {
+      "library": "jquery@3.6.0",
+      "destination": "wwwroot/lib/jquery/"
     }
   ]
 }

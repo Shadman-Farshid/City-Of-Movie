@@ -18,7 +18,12 @@ namespace CityOfMovie.Core.Services
             _context = context;
         }
 
-        public UserListViewModel GetUsers(int pageId=1, string username="", string email="")
+        public List<User> GetAllUserJson()
+        {
+            return _context.Users.ToList();
+        }
+
+        public UserFilterViewModel GetUsers(int pageId, string username="", string email="")
         {
             IQueryable<User> UserList = _context.Users;
             if (!string.IsNullOrEmpty(username))
@@ -31,13 +36,17 @@ namespace CityOfMovie.Core.Services
             }
 
             //Paging--------
-            var take =8;
-            var skip = (pageId-1)*take;
-            UserListViewModel userListVM = new UserListViewModel()
+            if (pageId == 0)
             {
-               
+                pageId = 1;
+            }
+            int take =8;
+            var skip = (pageId-1)*take;
+            UserFilterViewModel userListVM = new UserFilterViewModel()
+            {
                 CurentPage = pageId,
-                PageCount = UserList.Count() / take,
+                PageCount =(UserList.Count()+take)/take,
+                UserPerPage = take,
                 userList = UserList.OrderBy(u => u.RegisterDate).Skip(skip).Take(take).ToList()
             };
             return userListVM;
